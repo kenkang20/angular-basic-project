@@ -7,7 +7,7 @@ import { LoggingService } from './logging.service';
 
 @NgModule({
   providers: [
-    ShoppingListService,
+    // ShoppingListService,
     RecipeService,
     {
       provide: HTTP_INTERCEPTORS,
