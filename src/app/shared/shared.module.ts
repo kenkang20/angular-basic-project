@@ -4,7 +4,7 @@ import { LoadingSpinnerComponent } from '../header/loading-spinner/loading-spinn
 import { PlaceholderDirective } from './placeholder/placeholder.directive';
 import { DropdownDirective } from './dropdown.directive';
 import { CommonModule } from '@angular/common';
-import { LoggingService } from '../logging.service';
+import { LogService } from '../logging.service';
 
 @NgModule({
   declarations: [
@@ -24,7 +24,7 @@ import { LoggingService } from '../logging.service';
     CommonModule
   ],
   providers: [
-    LoggingService // this brings debugging difficulty to lazy loading module
+    LogService // this brings debugging difficulty to lazy loading module
   ]
 })
 export class SharedModule {}
